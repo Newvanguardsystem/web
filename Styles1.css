@@ -1,0 +1,287 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+body {
+    background-color: #f9fafc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #05407b;
+    color: #ffffff;
+    padding: 1rem 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo-title img {
+    width: 90px; /* Aumentado ligeramente */
+    height: auto;
+    margin-right: 15px;
+}
+
+.logo-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #5a9fd4;
+}
+
+/* Main Content */
+main {
+    padding: 2rem 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Bienvenida */
+.bienvenido {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #eef4fa;
+    margin-bottom: 3rem;
+    border-radius: 8px;
+}
+
+.bienvenido h3 {
+    color: #2a3a4d;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.bienvenido p {
+    color: #333;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sección de Servicios */
+.land-servicios {
+    padding: 4rem 0;
+    text-align: center;
+    background: #f7fbff;
+}
+
+.land-servicios h3 {
+    color: #2a3a4d;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.land-servicios p {
+    color: #333;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+/* Servicios en cuadrícula */
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.servicio-item {
+    padding: 2rem;
+    text-align: center;
+    background: white;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.servicio-item:hover {
+    transform: translateY(-8px);
+}
+
+.servicio-item img {
+    width: 80%;
+    height: auto;
+    max-height: 350px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-bottom: auto ;
+}
+
+.servicio-item h4 {
+    color: #2a3a4d;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.servicio-item p {
+    color: #555;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Botón de Cotización */
+button, .cotizacion-btn {
+    background-color: #2a3a4d;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .cotizacion-btn:hover {
+    background-color: #47698a;
+}
+
+.cotizacion {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.cotizacion-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: #2a3a4d;
+    color: white;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cotizacion-btn:hover {
+    background-color: #47698a;
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background-color: #2a3a4d;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+/* WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+    width: 100%;
+    height: 100%;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+.contacto-final {
+    background-color: #f9fafc;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    color: #333;
+}
+
+.contacto-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contacto-final h3 {
+    font-size: 2rem;
+    color: #05407b;
+    margin-bottom: 1.5rem;
+}
+
+.contacto-info {
+    display: flex;
+    flex-direction: column; /* Coloca todos los items en una columna */
+    gap: 1.5rem; /* Espacio entre cada item */
+    align-items: center; /* Centra horizontalmente los items */
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los íconos y textos */
+    gap: 1.5rem; /* Espacio entre íconos y textos */
+    font-size: 1.1rem;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: left; /* Alinea el texto a la izquierda */
+    justify-content: center; /* Centra horizontalmente el ícono y texto */
+}
+
+.contacto-item img {
+    width: 24px;
+    height: 24px;
+}
